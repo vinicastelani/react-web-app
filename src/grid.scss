@@ -1,0 +1,23 @@
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1280px) {
+        > div {
+            flex-basis: calc((100% / 4) - 32px);
+            padding: 16px;
+        }
+    }
+    @media screen and (max-width: 1279px) {
+        > div {
+            flex-basis: calc((100% / 2) - 32px);
+            padding: 16px;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        > div {
+            flex-basis: calc((100% / 1) - 32px);
+            padding: 16px;
+        }
+    }
+}
